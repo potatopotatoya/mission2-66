@@ -48,7 +48,7 @@ $t=date("Y/m/d/A/H/i/s", $timestamp);
 $maxnumber=0;
 
 //コメント編集の場合の変数newstr
-$newstr = $vhh."|".$_POST["namae"]."|".$_POST["komento"]."|".$pas."|"$t;
+$newstr = $vhh."|".$_POST["namae"]."|".$_POST["komento"]."|".$pas."|".$t;
 
 //fileの内容を書き込む(パスワードが入っているとき、いないときでかえる。入っていなかったらコピーするだけ)
 for ($b = 0; $b < count($tiring); ++$b){
