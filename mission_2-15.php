@@ -1,13 +1,13 @@
 ﻿<!DOCTYPE html>
 <html lang = "ja">
 <head>
-<title>keiziban</title>
+<title>potatos</title>
 </head>
 
 <body>
 <!--タイトルを目立たせる-->
 <p>
-<h3>mission2-6</h3>
+<h3>あなたの好きな食べ物は何ですか？</h3>
 </p>
 
 <?php
@@ -127,13 +127,12 @@ foreach($results as $row){
 
 <?php
 //tableの内容を表示
-$sql = 'SELECT*FROM potatos;';
+$sql = 'SELECT*FROM potatos ORDER BY id ASC;';
 $resultss = $pdo -> query($sql); 
 foreach($resultss as $row){
-	echo $row['id'].',';
-	echo $row['name'].',';
-	echo $row['comment'].',';
-	echo $row['password'].',';
+	echo $row['id'].',名前：';
+	echo $row['name'].',コメント：';
+	echo $row['comment'].',投稿時間：';
 	echo $row['time'].'<br>';
 }
 ?>
