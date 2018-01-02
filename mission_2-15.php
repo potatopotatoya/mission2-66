@@ -38,8 +38,8 @@ $pas = $_POST["pas"];
 $word = $_POST["word"];
 
 //時間の変数を作ってstringで全部の情報入力
-$timestamp = time();
-$t=date("Y/m/d/A/H/i/s", $timestamp);
+date_default_timezone_set('Asia/Tokyo');
+$t=date("Y/m/d H:i:s");
 
 //入力内容
 $name = $_POST["namae"];
